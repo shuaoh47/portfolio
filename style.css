@@ -1,0 +1,61 @@
+.self-portfolio {
+ grid-area: self-portfolio;
+ background-color: red;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  border: 40px solid rgba(77, 0, 18, 1);
+  min-height: 100vh;
+  background: rgba(142, 185, 254, 1);
+  display: grid;
+  grid-template-columns: 15% 20% 35% 20% 10%;
+  grid-template-rows: 10% 26% 42% 22%;
+  grid-template-areas:
+    "self-portfolio self-portfolio . . ."
+    "self-portfolio self-portfolio . about ."
+    ". portfolio portfolio . ."
+    ". . . contact contact"
+}
+
+
+  
+.about {
+  grid-area: about;
+}
+
+.portfolio {
+  grid-area: portfolio;
+}
+
+.contact {
+  grid-area: contact;
+}
+  
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(77, 0, 18, 1);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(142, 185, 254, 1);
+}
+
+@font-face {
+  font-family: 'Condiment'; /* Choose a name for your font */
+  src: url('../fonts/Condiment-Regular.woff2') format('woff2'),
+       url('../fonts/Condiment-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title {
+  font-family: 'Condiment', cursive;;
+  font-size: 128px;
+}
+
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+}
