@@ -1,0 +1,61 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  border: 1px solid red;
+}
+
+.blue {
+  flex: 1;
+  background-color: #8EB9FE;
+  color: #4D0012;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 100%;
+}
+
+header {
+  font-size: 64px;
+}
+
+.photo-box {
+  width: 475px;
+  height: 439px;
+  background-color: #D9D9D9;
+  border: 29px solid #4D0012;
+}
+
+.blue h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.red {
+  flex: 1;
+  background-color: #4D0012;
+  color: #8EB9FE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 20px;
+  padding: 40px;
+  width: 100%;
+}
+
+p {
+  padding: 12px;
+  padding-left: 55px;
+  font-size: 32px;
+}
+
+header, h1, p {
+  font-family: 'Fjalla One', sans-serif;
+}

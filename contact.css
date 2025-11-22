@@ -1,0 +1,55 @@
+header, p {
+  font-family: 'Fjalla One', sans-serif;
+  color: #4D0012;
+  font-size: 25px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  font-size: 64px;
+  padding: 40px 50px;
+  position: absolute;
+}
+
+.container {
+  background-color: #8EB9FE;
+  width: 200px;
+  height: 100px;
+  border-radius: 100px / 50px;
+  box-shadow: -30px 15px 20px black;
+  background: radial-gradient(#FFFFFF, #8EB9FE 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 100px;
+  left: 700px;
+}
+
+.instagram {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 350px;
+  left: 350px;
+}
+
+.telegram {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 400px;
+  left: 900px;
+}
+
+

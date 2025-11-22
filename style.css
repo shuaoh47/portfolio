@@ -59,3 +59,11 @@ body {
 h2 {
   font-family: 'Fjalla One', sans-serif;
 }
+
+a:link {
+  color: rgba(142, 185, 254, 1);
+}
+
+a:visited {
+  color: rgba(142, 185, 254, 1);
+}
