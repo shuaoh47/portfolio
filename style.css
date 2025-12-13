@@ -1,69 +1,100 @@
-.self-portfolio {
- grid-area: self-portfolio;
- background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 40px;
-  border: 40px solid rgba(77, 0, 18, 1);
-  min-height: 100vh;
-  background: rgba(142, 185, 254, 1);
-  display: grid;
-  grid-template-columns: 15% 20% 35% 20% 10%;
-  grid-template-rows: 10% 26% 42% 22%;
-  grid-template-areas:
-    "self-portfolio self-portfolio . . ."
-    "self-portfolio self-portfolio . about ."
-    ". portfolio portfolio . ."
-    ". . . contact contact"
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110px;
+  font-weight: 400;
+  color: #000;
 }
 
-
-  
-.about {
-  grid-area: about;
+.canvas {
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  margin: 0 auto;
+  background: #fff;
 }
 
-.portfolio {
-  grid-area: portfolio;
+.S {
+  position: absolute;
+  top: 202px;
+  left: 292px;
 }
 
-.contact {
-  grid-area: contact;
-}
-  
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(77, 0, 18, 1);
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: rgba(142, 185, 254, 1);
+.H1 {
+  position: absolute;
+  top: 74px;
+  left: 432px;
 }
 
-@font-face {
-  font-family: 'Condiment'; /* Choose a name for your font */
-  src: url('../fonts/Condiment-Regular.woff2') format('woff2'),
-       url('../fonts/Condiment-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+.U {
+  position: absolute;
+  top: 30px;
+  left: 600px;
 }
 
-.title {
-  font-family: 'Condiment', cursive;;
-  font-size: 128px;
+.A {
+  position: absolute;
+  top: 55px;
+  left: 755px;
 }
 
-h2 {
-  font-family: 'Fjalla One', sans-serif;
+.H2 {
+  position: absolute;
+  top: 180px;
+  left: 1100px;
 }
 
-a:link {
-  color: rgba(142, 185, 254, 1);
+.bowl {
+  position: absolute;
+  display: block;
 }
 
-a:visited {
-  color: rgba(142, 185, 254, 1);
+.bowl img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.works img {
+  position: absolute;
+  width: 274px;
+  height: auto;
+  left: 315px;
+  top: 430px;
+}
+
+.about img {
+  position: absolute;
+  width: 282px;
+  height: auto;
+  left: 580px;
+  top: 490px;
+}
+
+.contact img {
+  position: absolute;
+  width: 242px;
+  height: auto;
+  left: 850px;
+  top: 390px;
+}
+
+.extra img {
+  position: absolute;
+  width: 192px;
+  height: auto;
+  left: 930px;
+  top: 200px;
+}
+
+.bowl:hover {
+  transform: scale(1.05);
+  rotate: 360deg;
+  transition: transform 0.2s ease;
 }
