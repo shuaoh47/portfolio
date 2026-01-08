@@ -128,11 +128,6 @@ body {
   height: 100%;
 }
 
-.popup img {
-  display: block;
-  width: 500px;
-  height: auto;
-}
 
 .x-container {
   position: absolute;
@@ -166,8 +161,16 @@ body {
 
 /* About */
 .about-popup {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 85vh;
+  background-color: #d4d4d4;
+  border-radius: 30px;
+  padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .text-container {
@@ -183,17 +186,29 @@ body {
   text-align: end;
 }
 
-.image-container {  
+.about-image-container {
   display: flex;
   align-items: center;
-  margin: 10px;
 }
 
+.image-1 {  
+  display: flex;
+  width: 500px;
+
+}
 
 /* Contact */
 .contact-popup {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 85vh;
+  background-color: #d4d4d4;
+  border-radius: 30px;
+  padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
 .text-container2 {
@@ -205,18 +220,18 @@ body {
   padding-left: 220px;
 }
 
-
 .text-container2 p {
-  width: 550px;
   font-size: 30px;
 }
 
+.contact-image-container {
+  display: flex;
+  align-items: center;
+}
 
-.image-container2 img {  
-  margin: 40px;
-  height: 650px;
-  width: 50%;
-  text-align: center;
+.image-2 {  
+  width: 300px;
+  object-fit: contain;
 }
 
 /* Works */
