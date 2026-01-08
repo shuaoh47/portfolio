@@ -10,12 +10,13 @@ body {
   font-size: 110px;
   font-weight: 400;
   color: #f0f0f0;
+  height: 100vh;?
 }
 
 .canvas {
   position: relative;
   width: 1440px;
-  height: 900px;
+  height: 100vh;
   margin: 0 auto;
   background: #fff;
 }
@@ -51,8 +52,8 @@ body {
 }
 
 .bowl {
-  position: absolute;
-  display: block;
+  background: transparent;
+  border: none;
 }
 
 .bowl img {
@@ -61,36 +62,44 @@ body {
   display: block;
 }
 
-.works img {
+.bowl-works {
   position: absolute;
-  width: 274px;
-  height: auto;
   left: 315px;
   top: 430px;
 }
-
-.about img {
-  position: absolute;
-  width: 282px;
+.bowl-works img {
+  width: 274px;
   height: auto;
+}
+
+.bowl-about {
+  position: absolute;
   left: 580px;
   top: 490px;
 }
-
-.contact img {
-  position: absolute;
-  width: 242px;
+.bowl-about img {
+  width: 282px;
   height: auto;
+}
+
+.bowl-contact {
+  position: absolute;
   left: 850px;
   top: 390px;
 }
-
-.extra img {
-  position: absolute;
-  width: 192px;
+.bowl-contact img {
+  width: 242px;
   height: auto;
+}
+
+.bowl-extra {
+  position: absolute;
   left: 930px;
   top: 200px;
+}
+.bowl-extra img {
+  width: 192px;
+  height: auto;
 }
 
 .bowl:hover {
@@ -298,4 +307,17 @@ body {
   background-color: green;
   grid-column: 2;
   grid-row: 1;
+}
+
+.extra-popup {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 85vh;
+  background-color: #d4d4d4;
+  border-radius: 30px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }

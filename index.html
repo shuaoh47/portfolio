@@ -23,19 +23,19 @@
           <h1>A</h1>
         </section>
   
-        <button onClick="showPopup('works')" class="bowl works">
+        <button onClick="showPopup('works')" class="bowl bowl-works">
           <img src="/Users/apple/Sites/portfolio/assets/images/ceramic1.png" alt="bowl 1"/>
         </button>
         <section class="H2">
           <h1>H</h1>
         </section>
-        <button onClick="showPopup('about')" class="bowl about">
+        <button onClick="showPopup('about')" class="bowl bowl-about">
           <img src="/Users/apple/Sites/portfolio/assets/images/ceramic2.png" alt="bowl 2"/>
         </button>
-        <button onClick="showPopup('contact')" class="bowl contact">
+        <button onClick="showPopup('contact')" class="bowl bowl-contact">
           <img src="/Users/apple/Sites/portfolio/assets/images/ceramic3.png" alt="bowl 3">
         </button>
-        <button onClick="showPopup('extra')" class="bowl extra">
+        <button onClick="showPopup('extra')" class="bowl bowl-extra">
           <img src="/Users/apple/Sites/portfolio/assets/images/ceramic4.png" alt="bowl 4">
         </button>
       </div>
@@ -89,6 +89,23 @@
         </div>
       </div>
 
+      <!-- Extra Popup -->
+      <div class="popup-container">
+        <div class="popup extra-popup">
+          <div class="logo">
+            <img src="/Users/apple/Sites/portfolio/assets/images/ceramic1.png" alt="logo" />
+          </div>
+          <div class="works">
+            <div class="one">One</div>
+            <div class="three">Three</div>
+            <div class="two">Two</div>
+          </div>
+          <section class="x-container">
+            <button class="x">x</button>
+          </section>
+        </div>
+      </div>
+
       <script>
         function showPopup(type) {
           if (type === "works") {
@@ -97,6 +114,8 @@
             document.querySelector('.about-popup').parentElement.style.display = 'flex';
           } else if (type === "contact") {
             document.querySelector('.contact-popup').parentElement.style.display = 'flex';
+          } else if (type === "extra") {
+            document.querySelector('.extra-popup').parentElement.style.display = 'flex';
           }
         }
 
