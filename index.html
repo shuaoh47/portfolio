@@ -5,6 +5,7 @@
       <meta name="viewport" content="width+device-width, initial-scale=1.0">
       <title>Portfolio Website</title>
       <link rel="stylesheet" href="style.css"></link>
+      <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     </head>
     <body>
@@ -22,22 +23,96 @@
           <h1>A</h1>
         </section>
   
-        <a href="portfolio.html" class="bowl works">
+        <button onClick="showPopup('works')" class="bowl works">
           <img src="/Users/apple/Sites/portfolio/assets/images/ceramic1.png" alt="bowl 1"/>
-        </a>
+        </button>
         <section class="H2">
           <h1>H</h1>
         </section>
-        <a href="about.html" class="bowl about">
+        <button onClick="showPopup('about')" class="bowl about">
           <img src="/Users/apple/Sites/portfolio/assets/images/ceramic2.png" alt="bowl 2"/>
-        </a>
-        <a href="contact.html" class="bowl contact">
+        </button>
+        <button onClick="showPopup('contact')" class="bowl contact">
           <img src="/Users/apple/Sites/portfolio/assets/images/ceramic3.png" alt="bowl 3">
-        </a>
-        <a herf="" class="bowl extra">
+        </button>
+        <button onClick="showPopup('extra')" class="bowl extra">
           <img src="/Users/apple/Sites/portfolio/assets/images/ceramic4.png" alt="bowl 4">
-        </a>
+        </button>
       </div>
+
+      <!-- About Popup -->
+      <div class="popup-container">
+        <div class="popup about-popup">
+          <section class="text-container">
+            <p>Hi, this is a description about myself. Very nice to meet you. I hope you have a wonderful day.</p>
+          </section>
+          <section class="image-container">
+            <img src="/Users/apple/Sites/portfolio/assets/images/fampho.jpg" alt="about-img"/>
+          </section>
+          <section class="x-container">
+            <button class="x">x</button>
+          </section>
+        </div>
+      </div>
+
+      <!-- Contact Popup -->
+      <div class="popup-container">
+        <div class="popup contact-popup">
+          <section class="text-container2">
+            <p>Email</p>
+            <p>Discord</p>
+            <p>Instagram</p>
+          </section>
+          <section class="image-container2">
+            <img src="/Users/apple/Sites/portfolio/assets/images/empty phone text screen.jpg" alt="contact-img"/>
+          </section>
+          <section class="x-container">
+            <button class="x">x</button>
+          </section>
+        </div>
+      </div>
+
+      <!-- Works Popup -->
+      <div class="popup-container">
+        <div class="popup work-popup">
+          <div class="logo">
+            <img src="/Users/apple/Sites/portfolio/assets/images/ceramic1.png" alt="logo" />
+          </div>
+          <div class="works">
+            <div class="one">One</div>
+            <div class="three">Three</div>
+            <div class="two">Two</div>
+          </div>
+          <section class="x-container">
+            <button class="x">x</button>
+          </section>
+        </div>
+      </div>
+
+      <script>
+        function showPopup(type) {
+          if (type === "works") {
+            document.querySelector('.work-popup').parentElement.style.display = 'flex';
+          } else if (type === "about") {
+            document.querySelector('.about-popup').parentElement.style.display = 'flex';
+          } else if (type === "contact") {
+            document.querySelector('.contact-popup').parentElement.style.display = 'flex';
+          }
+        }
+
+        document.querySelectorAll('.x').forEach(closeButton => {
+          closeButton.addEventListener('click', function() {
+            document.querySelectorAll('.popup-container').forEach(element => {
+              element.style.display = 'none';
+            });
+          })
+        });
+      </script>
+
+      <!-- Taco Popup -->
+      <!-- <div class="popup-container">
+        <div class="popup"></div>
+      </div> -->
     </body>
   </html>
  
