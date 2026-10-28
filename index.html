@@ -1,171 +1,135 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width+device-width, initial-scale=1.0">
-      <title>Portfolio Website</title>
-      <link rel="stylesheet" href="style.css"></link>
-      <script src="script.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shua Oh — Portfolio</title>
+    <meta name="description" content="Portfolio of Shua Oh — web projects, experiments, and things made by hand and code.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    </head>
-    <body>
-      <div class="canvas">
-        <section class="S">
-          <h1>S</h1>
-        </section>
-        <section class="H1">
-          <h1>H</h1>
-        </section>
-        <section class="U">
-          <h1>U</h1>
-        </section>
-        <section class="A">
-          <h1>A</h1>
-        </section>
-  
-        <button onClick="showPopup('works')" class="bowl bowl-works">
-          <img src="./assets/images/ceramic1.png" alt="bowl 1"/>
-        </button>
-        <section class="H2">
-          <h1>H</h1>
-        </section>
-        <button onClick="showPopup('about')" class="bowl bowl-about">
-          <img src="./assets/images/ceramic2.png" alt="bowl 2"/>
-        </button>
-        <button onClick="showPopup('contact')" class="bowl bowl-contact">
-          <img src="./assets/images/ceramic3-1.png" alt="bowl 3">
-        </button>
-        <button onClick="showPopup('extra')" class="bowl bowl-extra">
-          <img src="./assets/images/ceramic4.png" alt="bowl 4">
-        </button>
-      </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="top">
+      <a class="mark" href="#">Shua Oh<span class="mark-extra"> — Portfolio 2026</span></a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-      <!-- About Popup -->
-      <div class="popup-container">
-        <div class="popup about-popup">
-          <section class="text-container">
-            <p>Hi, this is a description about myself. Very nice to meet you. I hope you have a wonderful day.</p>
-          </section>
-          <section class="about-image-container">
-            <img class="image-1" src="./assets/images/fampho.jpg" alt="about-img"/>
-          </section>
-          <section class="x-container">
-            <button class="x">x</button>
-          </section>
+    <main>
+      <section class="hero">
+        <h1>Shua Oh<span class="accent">.</span></h1>
+        <p class="lede">
+          I make websites that feel like <em>objects</em> —
+          small, handmade, and a little bit odd.
+        </p>
+      </section>
+
+      <section id="work" class="work">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <span class="count">05</span>
         </div>
-      </div>
 
-      <!-- Contact Popup -->
-      <div class="popup-container">
-        <div class="popup contact-popup">
-          <section class="text-container2">
-            <p>EMAIL</p>
-            <p>DISCORD</p>
-            <p>INSTAGRAM</p>
-          </section>
-          <section class="contact-image-container">
-            <img class="image-2" src="./assets/images/empty phone text screen.jpg" alt="contact-img"/>
-          </section>
-          <section class="x-container">
-            <button class="x">x</button>
-          </section>
+        <ol class="projects">
+          <li>
+            <a class="project" href="https://gallery-ivory-beta.vercel.app" target="_blank" rel="noopener"
+               data-desc="A virtual 3D archive you walk through to browse my work.">
+              <span class="num">01</span>
+              <span class="title">Gallery</span>
+              <span class="tag">3D · Three.js</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://book-cafe-sooty.vercel.app/" target="_blank" rel="noopener"
+               data-desc="A cafe-themed book tracker — order books off the menu.">
+              <span class="num">02</span>
+              <span class="title">Book Cafe</span>
+              <span class="tag">Next.js · Firebase</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://planner-iota-sepia.vercel.app" target="_blank" rel="noopener"
+               data-desc="A day planner for keeping tasks and schedules in one place.">
+              <span class="num">03</span>
+              <span class="title">Planner</span>
+              <span class="tag">Next.js</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://anti-recommendation-engine.vercel.app/" target="_blank" rel="noopener"
+               data-desc="Recommends the things an algorithm never would.">
+              <span class="num">04</span>
+              <span class="title">The Anti-Recommendation Engine</span>
+              <span class="tag">HTML · JS</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="project" href="https://habit-tracker-bice-three-44.vercel.app" target="_blank" rel="noopener"
+               data-desc="Track daily habits and keep your streaks going.">
+              <span class="num">05</span>
+              <span class="title">AURA Habit Tracker</span>
+              <span class="tag">HTML · JS</span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section id="about" class="about">
+        <div class="section-head">
+          <h2>About</h2>
         </div>
-      </div>
-
-      <!-- Works Popup -->
-      <div class="popup-container">
-        <div class="popup work-popup">
-          <div class="logo">
-            <img src="./assets/images/ceramic1.png" alt="logo" />
+        <div class="about-body">
+          <figure>
+            <img src="./assets/images/fampho.jpg" alt="Shua Oh">
+          </figure>
+          <div class="about-text">
+            <p class="big">
+              Hi, I'm Shua. I build for the web and make things with my hands —
+              ceramics, books, and the occasional <em>strange little app</em>.
+            </p>
+            <p>
+              I like interfaces that borrow from physical things: a gallery you walk through,
+              a cafe menu for your reading list, a recommender that refuses to recommend.
+            </p>
+            <dl class="facts">
+              <div><dt>Focus</dt><dd>Web, interaction, 3D</dd></div>
+              <div><dt>Tools</dt><dd>HTML, CSS, JS, Next.js, Three.js</dd></div>
+              <div><dt>Off-screen</dt><dd>Ceramics, reading</dd></div>
+            </dl>
           </div>
-          <div class="works">
-            <a class="work work-gallery" href="https://gallery-ivory-beta.vercel.app" target="_blank" rel="noopener">
-              <span class="work-tag">3D · Three.js</span>
-              <h2>Gallery</h2>
-              <p>A virtual 3D archive you walk through to browse my work.</p>
-            </a>
-            <a class="work" href="https://planner-iota-sepia.vercel.app" target="_blank" rel="noopener">
-              <span class="work-tag">Next.js</span>
-              <h2>Planner</h2>
-              <p>A day planner for keeping tasks and schedules in one place.</p>
-            </a>
-            <a class="work" href="https://anti-recommendation-engine.vercel.app/" target="_blank" rel="noopener">
-              <span class="work-tag">HTML · JS</span>
-              <h2>The Anti-Recommendation Engine</h2>
-              <p>Recommends the things an algorithm never would.</p>
-            </a>
-            <a class="work" href="https://habit-tracker-bice-three-44.vercel.app" target="_blank" rel="noopener">
-              <span class="work-tag">HTML · JS</span>
-              <h2>AURA Habit Tracker</h2>
-              <p>Track daily habits and keep your streaks going.</p>
-            </a>
-            <a class="work" href="https://book-cafe-sooty.vercel.app/" target="_blank" rel="noopener">
-              <span class="work-tag">Next.js · Firebase</span>
-              <h2>Book Cafe</h2>
-              <p>A cafe-themed book tracker — order books off the menu.</p>
-            </a>
-          </div>
-          <section class="x-container">
-            <button class="x">x</button>
-          </section>
         </div>
-      </div>
+      </section>
 
-      <!-- Extra Popup -->
-      <div class="popup-container">
-        <div class="popup extra-popup">
-          <div class="">
-            <img src="" alt="" />
-          </div>
-          <div class="extra">
-            <div class="extra-one">
-              <img src="./assets/images/book2.png" alt="book2"/>
-              <img src="./assets/images/book2.png" alt="book2"/>
-              <img src="./assets/images/book2.png" alt="book2"/>
-              <img src="./assets/images/book2.png" alt="book2"/>
-            </div>
-            <div class="extra-two">
-              <img src="./assets/images/ceramic4.png" alt="ceramic4"/>
-              <div class="text-container">
-                 <div class="welcome">Welcome</div>
-                 <div class="to-my">to my</div>
-                 <div class="bookshelf">Bookshelf</div>
-              </div>
-              <img class="plant" src="./assets/images/plant.png" alt="plant" />
-            </div>
-            
-            <div class="extra-three">
-              <img src="./assets/images/book1.jpg" alt="book1"/>
-              <img src="./assets/images/book1.jpg" alt="book1"/>
-              <img src="./assets/images/book1.jpg" alt="book1"/>
-            </div>
-            </div>
-          </div>
-          <section class="x-container">
-            <button class="x">x</button>
-          </section>
+      <section id="contact" class="contact">
+        <div class="section-head">
+          <h2>Contact</h2>
+        </div>
+        <p class="say-hi">Say <em>hello</em><span class="accent">.</span></p>
+        <ul class="links">
+          <li><a href="#">Email <span aria-hidden="true">↗</span></a></li>
+          <li><a href="#">Instagram <span aria-hidden="true">↗</span></a></li>
+          <li><a href="#">Discord <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </section>
+    </main>
 
-      <script>
-        function showPopup(type) {
-          if (type === "works") {
-            document.querySelector('.work-popup').parentElement.style.display = 'flex';
-          } else if (type === "about") {
-            document.querySelector('.about-popup').parentElement.style.display = 'flex';
-          } else if (type === "contact") {
-            document.querySelector('.contact-popup').parentElement.style.display = 'flex';
-          } else if (type === "extra") {
-            document.querySelector('.extra-popup').parentElement.style.display = 'flex';
-          }
-        }
+    <footer class="bottom">
+      <span>© 2026 Shua Oh</span>
+      <a href="#">Back to top ↑</a>
+    </footer>
 
-        document.querySelectorAll('.x').forEach(closeButton => {
-          closeButton.addEventListener('click', function() {
-            document.querySelectorAll('.popup-container').forEach(element => {
-              element.style.display = 'none';
-            });
-          })
-        });
-      </script>
-    </body>
-  </html>
- 
+    <div class="preview" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
