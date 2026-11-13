@@ -1,7 +1,7 @@
 :root {
   --bg: #fafaf7;
   --ink: #111111;
-  --muted: #8a8a85;
+  --muted: #6b6b66;
   --line: #111111;
   --accent: #d95b33;
   --gutter: clamp(16px, 4vw, 48px);
@@ -193,26 +193,19 @@ main {
   transform: translate(4px, -4px);
 }
 
-/* Cursor preview */
-.preview {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  max-width: 260px;
-  padding: 14px 16px;
-  background: var(--ink);
-  color: var(--bg);
-  font-size: 14px;
-  line-height: 1.4;
-  pointer-events: none;
-  opacity: 0;
-  transform: translate(-9999px, -9999px);
-  transition: opacity 0.2s ease;
+/* Project description */
+.project .body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
 }
 
-.preview.show {
-  opacity: 1;
+.project .desc {
+  max-width: 52ch;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--muted);
 }
 
 /* About */
