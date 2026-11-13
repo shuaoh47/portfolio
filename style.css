@@ -3,7 +3,8 @@
   --ink: #111111;
   --muted: #6b6b66;
   --line: #111111;
-  --accent: #d95b33;
+  --accent: #ff6a48;
+  --accent-deep: #bd4e35;
   --gutter: clamp(16px, 4vw, 48px);
   --sans: "Inter", Helvetica, Arial, sans-serif;
   --serif: "Instrument Serif", Georgia, serif;
@@ -186,7 +187,7 @@ main {
 
 .project:hover {
   padding-left: 16px;
-  color: var(--accent);
+  color: var(--accent-deep);
 }
 
 .project:hover .arrow {
